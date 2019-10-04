@@ -26,7 +26,11 @@ h4{
 .PicOfMe{
     width: 200px;
 }
-p{
+.Para1{
+    width: 350px;
+    color:darkgreen
+}
+.Para2{
     width: 350px;
     color:darkgreen
 }
