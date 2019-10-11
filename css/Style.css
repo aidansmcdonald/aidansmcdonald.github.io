@@ -2,28 +2,40 @@ body{background-color: lightcyan;
 }
 
 h1{
-    color: darkcyan;
+    color: skyblue;
 }
 h2{
     color: darkblue;
 }
 h3{
-    color: darkgreen;
+    color: black;
 }
 h4{
-    color: aqua;
+    color: black;
 }
 
 .LowerHalf{
-    background-color:black;
-    color: white;
+    background-color:white;
+    color: black;
+    border-style: solid;
+    border-color: black;
 }
 
-.TableColour{
+.Table{
     background-color: white;
     width: 350px;
+    border-style: double;
 }
 
 .PicOfMe{
     width: 200px;
+}
+.TopHr{
+    width: 380px;
+}
+.PortfolioArt{
+    width: 128px;
+    height: 128px;
+    border-style: solid;
+    border-color: black;
 }
