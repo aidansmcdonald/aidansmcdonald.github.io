@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Page</title>
+    <style>
+    #myContainer{
+      width: 400px;
+      height: 400px;
+      position: relative;
+      background: yellow;
+    }
+
+    #myAnimation{
+      width: 50px;
+      height: 50px;
+      position: abolsute;
+      background: red;
+    }
+    </style>
+  </head>
+  <body style="background-color:lightyellow;">
+    <h1>My First JavaScript Animation</h1>
+    <p>
+    <button onclick="myMove()">Click Me</button>
+    </p>
+    <div id ="myContainer">
+        <div id ="myAnimation">My animation will go here</div>
+    </div>
+    
+<canvas id="myCanvas" width="200" height="100"
+style="border:1px solid #000000;">
+</canvas>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <form>
+
+<p id="textblock"></p>
+
+Cities: <BR>
+<select>
+  <option value="1">Cornwall</option>
+  <option value="2" selected>Ottawa</option>
+  <option value="3">Montreal</option>
+  <option value="4">Toronto</option>
+  <option value="5">Vancouver</option>
+</select>
+<BR><BR>
+
+Color: <BR>
+<input type="radio" name="color" value-"red"> red
+<BR>
+<input chcked type="radio" name="color" value-"yellow"> yellow
+<BR>
+<input type="radio" name="color" value-"green"> green
+<BR>
+
+  <br><br>
+
+  Skill Set:
+  <BR>
+  <input type ="checkbox" name="Skill1" value="1"> C++
+  <BR>
+  <input type ="checkbox" name="Skill2" value="2"> javascript
+  <BR>
+  <input checked type ="checkbox" name="Skill3" value="3"> html
+  <BR>
+  <input type ="checkbox" name="Skill4" value="4"> css
+  <BR>
+    <script>
+    function myMove() {
+      var elem = document.getElementById("myAnimation");
+      var pos = 0;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (pos == 350) {
+          clearInterval(id);
+        } else {
+          pos++;
+          elem.style.top = pos + 'px';
+          elem.style.left = pos + 'px';
+        }
+      }
+    }
+    </script>
+  </body>
+</html>
+<!--
+<script>
+
+  document.title = "Aidan";
+  document.getElementById("textblock").innerHTML = " Welcome!";
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0, 0)
+ctx.lineTo(200, 100)
+ctx.stroke();
+
+
+
+</script>
+-->
